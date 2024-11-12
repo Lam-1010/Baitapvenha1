@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: linear-gradient(#eb3349, #f45c43);
+            min-height: 100vh;
+        }
+        .box h1{
+            margin-bottom: 10px;
+            font-family: "Rubik", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style:normal;
+        }
+        .box{
+            width: 500px;
+            height: 600px;
+            background: #fff;
+            margin:100px auto;
+            text-align: center;
+            border-radius: 5px;
+            padding: 50px 20px;
+        }
+        input[type='email'], .box input[type='password']{
+            width: 100%;
+            padding: 6px 10px;
+            margin-bottom: 20px;
+        }
+        .box a{
+            margin-top: 10px;
+            display: inline;
+            text-decoration: none;/*bo gach chaan */
+            color: #000;
+
+            opacity: 0.7; /*Do mo cua mau chu*/
+        }
+        input[type='submit']{
+            width: 60%;
+            padding: 10px;
+            text-transform: uppercase; /*chuyen chu sang chu in hoa*/
+            color: #fff;
+            background: rgb(255, 64, 47);
+            border:none;
+            font-weight: 700;
+            border-radius: 5px;
+        }
+        .icon a{
+            display: inline-block;
+            margin: 10px;
+            width: 40px;
+            height: 40px;
+            background-color: #0984e3;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            font-size: 15px;
+            transition: 1s;
+        }
+        h1:hover{
+            color: #eb3349;
+        }
+        .icon a:hover{
+            background: #00b894
+            ;
+        }
+        .text a{
+            width: 70px;
+            height: 70px;
+            background: #fff;
+            display: inline-block;
+            text-align: center;
+            line-height: 70px;
+            border-radius: 50%;
+            color: #00b894;
+            margin: 10px;
+            transition: 0.5s;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        .text a:hover{
+            color: #eb3349;
+            transform: translateY(-7px);
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+   <div class="box">
+    <h1>SIGN IN</h1>
+    <form >
+        <input type="email" placeholder="Enter your email"><br>
+        <input type="password" placeholder="Enter your password"><br>
+        <a href="#">Forgot your password</a><br>
+        <input type="submit" value="Sign in">
+    </form>
+    <div class="icon">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="text">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+   </div>
+</body>
+</html>
