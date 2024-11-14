@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>học flex box</title>
 <style>
     .contain{
         padding: 50px;
     }
-    .title{
+    .contain .title{
         text-align: center;
     }
     .products{
@@ -16,32 +17,101 @@
     }
     .products .box{
         width: 25%;
-        border: 1px solid pink;
         height: 200px;
+        transition: 0.5s;
+        padding: 20px 10px;
+    }
+    .products .box:hover{
+        transform: translateY(-15px);
+    }
+    .products .box img{
+        width: 100%;
+    }
+    .products .box .content{
         text-align: center;
+        padding: 20px 10px;
     }
 </style>
 </head>
 <body>
-    <div class="contain">
-        <div class="title">
-            <h1>THỰC ĐƠN HÔM NAY</h1>
-        </div> 
-    <div class="products">
-        <div class="box">
-            Cơm gà xối mỡ
+        <div class="contain">
+            <div class="title">
+                <h1>THỰC ĐƠN HÔM NAY</h1>
+            </div> 
+            <div class="products">
+                <div class="box">
+                    <img src="product_4.jpg" alt="Cơm gà xối mỡ" width="200px">
+                    <div class="content">
+                        <h1>Món 1</h1>
+                        <p>Cơm gà xối mỡ</p>
+                        <p>$100.000 - $350.000</p>
+                        <p>
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <span>(1 review)</span>
+                        </p>    
+                     </div>
+                </div>
+                <div class="box">    
+                    <img src="product_1.jpg" alt="Cơm thịt kho tàu" width="200px">
+                    <div class="content">
+                        <h1>Món 2</h1>
+                        <p>Cơm thịt kho tàu</p>
+                        <p>$100.000 - $350.000</p>
+                        <p>
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <span>(1 review)</span>
+                        </p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="product_2.jpg" alt="Cơm trứng chiên" width="200px">
+                    <div class="content">
+                        <h1>Món 3</h1>
+                        <p>Cơm trứng</p>
+                        <p>$100.000 - $350.000</p>
+                        <p>
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <span>(1 review)</span>
+                        </p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="product_3.jpg" alt="Cơm tấm sườn bì chả" width="200px">
+                    <div class="content">
+                        <h1>Món 4</h1>
+                        <p>Cơm cá kho</p>
+                        <p>$100.000 - $350.000</p>
+                        <p>
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <span>(1 review)</span>
+                        </p>
+                    </div>
         </div>
-        <div class="box">
-            Cơm thịt kho tàu
-        </div>
-        <div class="box">
-            Cơm trứng chiên
-        </div>
-        <div class="box">
-            Cơm tấm sườn bì chả
-        </div>
-    </div>
-    // Thẻ width là lấy 100 chia ra cho số hộp
-    // Thẻ height là độ dài cột
+    <!--  Thẻ width là lấy 100 chia ra cho số hộp
+     Thẻ height là độ dài cột Viết cú pháp Ctrl /-->
 </body>
 </html>
